@@ -6,4 +6,6 @@ eb create
 eb deploy
 eb terminate
 eb open
-eb config
+eb config      # see the configuration of the current environment
+eb list        # lists all environments
+eb use dev-env # use a specific environment

@@ -3,5 +3,9 @@ node_modules/
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
+!.elasticbeanstalk/*.README.md
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+.ebextensions/*
+!.ebextensions/*.README.md
