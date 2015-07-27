@@ -1,5 +1,7 @@
-~/.aws/config
-pip install
+pip install awsebcli
+pip install --upgrade awsebcli
+set up access key @ ~/.aws/config
+
 eb create
 eb deploy
 eb terminate
