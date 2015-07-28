@@ -5,6 +5,6 @@ cp .ebext/* $SCRIPT_DIR/../../.ebextensions/
 cp .ebconfig/* $SCRIPT_DIR/../../.elasticbeanstalk/
 
 cd $SCRIPT_DIR/../..
-eb use dev-env
+eb use prod-env #Environment
 eb deploy
 eb open
