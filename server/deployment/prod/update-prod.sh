@@ -3,11 +3,14 @@
 # http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers-ec2.html#customize-containers-format-options
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd $SCRIPT_DIR
-cp .ebext/* $SCRIPT_DIR/../../.ebextensions/
-cp .ebconfig/* $SCRIPT_DIR/../../.elasticbeanstalk/
+SERVER_DIR="$(cd $SCRIPT_DIR/../.. && pwd)"
+ENV="prod-env"
 
-cd $SCRIPT_DIR/../..
-eb use dev-env  #Environment
+cd $SERVER_DIR
+
+cp $SCRIPT_DIR/.ebext/* $SERVER_DIR/.ebextensions/
+cp $SCRIPT_DIR/.ebconfig/* $SERVER_DIR/.elasticbeanstalk/
+
+eb use $ENV
 eb deploy
 eb open
