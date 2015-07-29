@@ -1,3 +1,5 @@
+# https://blogs.aws.amazon.com/application-management/post/Tx1YHAJ5EELY54J/Using-the-Elastic-Beanstalk-EB-CLI-to-create-manage-and-share-environment-config
+
 . deployment/create-app.sh        #ONE TIME - Creates application in beanstalk
 
 dev
@@ -18,7 +20,7 @@ prod
 --------------------------
 MANUAL STEPS
 --------------------------
---------------------------
+-------------
 
 pip install awsebcli
 pip install --upgrade awsebcli

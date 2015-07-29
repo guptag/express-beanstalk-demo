@@ -1,10 +1,2 @@
-branch-defaults:
-  default:
-    environment: prod-env
 global:
-  application_name: myexpress-demo
-  default_ec2_keyname: aws-express-demo-eb
-  default_platform: Node.js
-  default_region: us-west-2
   profile: null
-  sc: null
