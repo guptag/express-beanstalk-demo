@@ -12,7 +12,7 @@ cd $SERVER_DIR
 cp $SCRIPT_DIR/.ebext/*.config $SERVER_DIR/.ebextensions/
 cp $SCRIPT_DIR/.ebconfig/config.yml $SERVER_DIR/.elasticbeanstalk/
 
-eb create $ENV --cname $ENV-$RAND --tags ENV=DEV,APP=DASHBOARD --nohang
+eb create $ENV --cname $ENV-$RAND --tags Stage=Development,Name=DEV_BUSINESS_PERF --nohang
 
 cp $SERVER_DIR/.elasticbeanstalk/config.yml $SCRIPT_DIR/.ebconfig/config.yml
 
